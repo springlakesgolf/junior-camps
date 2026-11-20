@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Summer Camp 2027 Sign-up | Spring Lakes Golf Club</title>
+<link rel="icon" href="heron-navy.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#323C60;--gold:#B89A2D;--ink:#323C60;--muted:#5A6280;--line:#D9DCE6;--paper:#F6F5F0;--card:#FFFFFF;--ok:#2F6B3A;--okbg:#E3F1E0;--wait:#7A5A00;--waitbg:#FBF0D2;--err:#9B2C2C;--errbg:#F8E1DF}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Montserrat,Arial,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+header{background:#fff;border-bottom:3px solid var(--gold)}
+header .wrap{display:flex;align-items:center;gap:14px;padding-top:14px;padding-bottom:14px}
+header img{width:64px;height:auto}
+.club{font-family:Cinzel,Georgia,serif;font-weight:600;letter-spacing:.18em;font-size:14px;color:var(--navy)}
+.hero{padding:34px 0 8px}
+.hero .eyebrow{font-family:Cinzel,Georgia,serif;letter-spacing:.2em;font-size:12px;color:var(--gold);font-weight:600}
+h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:clamp(40px,8vw,60px);line-height:1.02;margin:6px 0 14px;color:var(--navy)}
+h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:28px;margin:0 0 6px;color:var(--navy)}
+h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:22px;margin:0;color:var(--navy)}
+.price{display:inline-block;background:var(--gold);color:var(--navy);padding:10px 16px;border-radius:4px;font-weight:600}
+.price b{font-family:"Cormorant Garamond",Georgia,serif;font-size:30px;line-height:1;margin-right:6px}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 28px;margin:26px 0 8px}
+.facts dt{font-size:11px;letter-spacing:.14em;font-weight:600;color:var(--gold);text-transform:uppercase}
+.facts dd{margin:2px 0 0;font-weight:500}
+section{margin:30px 0}
+.weeks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:12px}
+.week{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px}
+.week .n{font-weight:600}
+.week .d{color:var(--muted);font-size:14px}
+.chip{display:inline-block;margin-top:8px;font-size:12px;font-weight:600;padding:3px 8px;border-radius:20px;background:var(--okbg);color:var(--ok)}
+.chip.full{background:var(--waitbg);color:var(--wait)}
+.chip.unk{background:#EEF0F5;color:var(--muted)}
+.note{background:#fff;border-left:4px solid var(--gold);padding:14px 16px;border-radius:0 6px 6px 0}
+.note p{margin:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px;margin:14px 0}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px}
+.full-row{grid-column:1/-1}
+label.f{display:block;font-size:13px;font-weight:600;margin-bottom:4px}
+.opt{font-weight:400;color:var(--muted)}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;font:inherit;color:var(--ink);padding:10px 12px;border:1px solid #BFC4D3;border-radius:6px;background:#fff}
+textarea{min-height:64px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-size:13px;font-weight:600;margin-bottom:6px;padding:0}
+.pick{display:flex;flex-wrap:wrap;gap:8px}
+.pick label{display:flex;align-items:center;gap:8px;border:1px solid #BFC4D3;border-radius:6px;padding:9px 12px;background:#fff;cursor:pointer;font-size:14px}
+.pick input{accent-color:var(--navy);width:18px;height:18px;margin:0}
+.pick label:has(input:checked){border-color:var(--navy);background:#EEF0F7}
+.pick .tag{font-size:11px;font-weight:600;color:var(--wait)}
+.wk label{flex:1 1 180px}
+.lunch{display:grid;grid-template-columns:120px 1fr;gap:8px 12px;align-items:center}
+.lunch .day{font-size:14px;font-weight:600}
+.camper-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:12px}
+.sub{margin:18px 0 8px;font-size:12px;letter-spacing:.12em;font-weight:600;color:var(--gold);text-transform:uppercase}
+button{font:inherit;cursor:pointer}
+.btn{background:var(--navy);color:#fff;border:0;border-radius:6px;padding:13px 22px;font-weight:600;font-size:15px}
+.btn:disabled{opacity:.6;cursor:wait}
+.btn.ghost{background:#fff;color:var(--navy);border:1px solid var(--navy)}
+.link{background:none;border:0;color:var(--muted);text-decoration:underline;padding:4px;font-size:13px}
+.agree{display:flex;gap:10px;align-items:flex-start;font-size:14px}
+.agree input{width:20px;height:20px;margin-top:2px;accent-color:var(--navy);flex:none}
+.err{background:var(--errbg);color:var(--err);padding:12px 14px;border-radius:6px;font-weight:500;margin:12px 0}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.result .line{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.result .line:last-child{border-bottom:0}
+.st{font-weight:600;white-space:nowrap}
+.st.c{color:var(--ok)}
+.st.w{color:var(--wait)}
+footer{margin:40px 0 0;padding:22px 0 34px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media (max-width:720px){
+  .weeks{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .facts,.grid2{grid-template-columns:1fr}
+  .lunch{grid-template-columns:1fr;gap:4px}
+  .lunch .day{margin-top:8px}
+  .card{padding:16px}
+  .btn{width:100%}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="heron-navy.png" alt="Spring Lakes heron"><span class="club">SPRING LAKES GOLF CLUB</span></div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="eyebrow">JUNIOR GOLF</div>
+    <h1>Summer Camp 2027</h1>
+    <div class="price"><b>$599</b>per camper, per week</div>
+    <dl class="facts">
+      <div><dt>Ages</dt><dd>6 to 14 years old</dd></div>
+      <div><dt>Hours</dt><dd>9 AM to 4 PM, Monday to Friday</dd></div>
+      <div><dt>Included</dt><dd>A golf polo for every camper, plus lunch and a freezie every day</dd></div>
+      <div><dt>Every day</dt><dd>Golf, active games, arts and crafts</dd></div>
+    </dl>
+  </div>
+
+  <section aria-labelledby="wk">
+    <h2 id="wk">Camp weeks</h2>
+    <p class="opt" style="margin:0">Each week takes 30 campers. When a week is full you can still sign up for its waitlist.</p>
+    <div class="weeks" id="weekCards"></div>
+  </section>
+
+  <div class="note"><p><b>Nothing to pay today.</b> After you sign up, our team will reach out to collect payment by Visa or e-transfer. Payment is due by February 15, 2027, and spots not paid by then go to the waitlist.</p></div>
+
+  <form id="form" novalidate autocomplete="on">
+    <input type="text" name="website" id="hp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+    <section aria-labelledby="par">
+      <h2 id="par">Parent or guardian</h2>
+      <div class="card grid2">
+        <div><label class="f" for="pName">Full name</label><input type="text" id="pName" maxlength="80" autocomplete="name" required></div>
+        <div><label class="f" for="pEmail">Email</label><input type="email" id="pEmail" maxlength="120" autocomplete="email" required></div>
+        <div><label class="f" for="pPhone">Phone</label><input type="tel" id="pPhone" maxlength="30" autocomplete="tel" required></div>
+        <div></div>
+        <div><label class="f" for="eName">Second emergency contact</label><input type="text" id="eName" maxlength="80" required></div>
+        <div><label class="f" for="ePhone">Their phone</label><input type="tel" id="ePhone" maxlength="30" required></div>
+        <div><label class="f" for="eRel">Their relationship to the camper</label><input type="text" id="eRel" maxlength="40" placeholder="Grandparent, aunt, neighbour" required></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="cmp">
+      <h2 id="cmp">Campers</h2>
+      <p class="opt" style="margin:0">One form per family. Add a brother or sister below, and pick as many weeks as you like for each camper.</p>
+      <div id="campers"></div>
+      <button type="button" class="btn ghost" id="addCamper">Add a sibling</button>
+    </section>
+
+    <section>
+      <label class="agree"><input type="checkbox" id="agree"> <span>I understand camp is $599 per camper for each confirmed week, payment is due by February 15, 2027, and our team will reach out to collect it.</span></label>
+      <div class="err" id="err" role="alert" hidden></div>
+      <p style="margin-top:18px"><button type="submit" class="btn" id="go">Sign up</button></p>
+    </section>
+  </form>
+
+  <section id="done" class="result" hidden aria-live="polite">
+    <h2 id="doneTitle">You are signed up</h2>
+    <div class="card" id="doneList"></div>
+    <p id="donePay"></p>
+    <p>A confirmation email is on its way to <b id="doneEmail"></b>. Questions? Call our team at 905-640-3633.</p>
+    <p><button type="button" class="btn ghost" id="again">Sign up another family</button></p>
+  </section>
+</main>
+
+<footer><div class="wrap"><span class="club" style="font-size:12px">SPRING LAKES GOLF CLUB</span><br>4962 Stouffville Road, Stouffville ON L4A 3S8<br>905-640-3633</div></footer>
+
+<template id="camperTpl">
+  <div class="card camper">
+    <div class="camper-head"><h3 class="ct">Camper</h3><button type="button" class="link rm">Remove</button></div>
+    <div class="grid2">
+      <div><label class="f">First name</label><input type="text" class="first" maxlength="40" required></div>
+      <div><label class="f">Last name</label><input type="text" class="last" maxlength="40" required></div>
+      <div><label class="f">Age on July 1, 2027</label><select class="age" required></select></div>
+      <div><label class="f">Polo size</label><select class="shirt" required></select></div>
+    </div>
+    <div class="sub">Weeks</div>
+    <fieldset><legend class="hp">Weeks</legend><div class="pick wk"></div></fieldset>
+    <div class="sub">Lunch each day</div>
+    <div class="lunch"></div>
+    <div class="sub">About your camper</div>
+    <div class="grid2">
+      <fieldset><legend>Has your child played golf before?</legend><div class="pick golf"></div></fieldset>
+      <fieldset><legend>Do they have their own golf clubs?</legend><div class="pick clubs"></div></fieldset>
+      <div class="full-row"><label class="f">Allergies <span class="opt">(write None if there are none)</span></label><textarea class="allergies" maxlength="500" required></textarea></div>
+      <div class="full-row"><label class="f">Medical conditions we should know about <span class="opt">(write None if there are none)</span></label><textarea class="medical" maxlength="500" required></textarea></div>
+      <div class="full-row"><label class="f">Behavioural notes or accommodations that would help us support your child <span class="opt">(optional)</span></label><textarea class="behaviour" maxlength="500"></textarea></div>
+      <div class="full-row"><label class="f">Anything else we should know <span class="opt">(optional)</span></label><textarea class="other" maxlength="500"></textarea></div>
+    </div>
+  </div>
+</template>
+
+<script>
+(function(){
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbxVSwlQORkJRo22FQS16_JhQ9LSvtMP1YyB8oA-5wj29DyVYGq3zOnKu3Wc8WV6vhQVCA/exec";
+  var CFG = {"weeks": [{"id": "W1", "name": "Week 1", "dates": "July 5 to 9"}, {"id": "W2", "name": "Week 2", "dates": "July 19 to 23"}, {"id": "W3", "name": "Week 3", "dates": "August 2 to 6"}, {"id": "W4", "name": "Week 4", "dates": "August 16 to 20"}], "lunch": [{"day": "Monday", "choices": ["Grilled cheese", "Turkey & cheese wrap"]}, {"day": "Tuesday", "choices": ["Hamburger", "Hotdog"]}, {"day": "Wednesday", "choices": ["Chicken fingers", "Fish sticks"]}, {"day": "Thursday", "choices": ["Macaroni & cheese", "Butter pasta"]}, {"day": "Friday", "choices": ["Pepperoni pizza", "Cheese pizza"]}], "shirtSizes": ["Youth XS", "Youth S", "Youth M", "Youth L", "Youth XL", "Adult S", "Adult M", "Adult L", "Adult XL"], "golfBefore": ["Never", "Occasionally", "Yes, regularly"], "ages": [6, 14], "maxCampers": 4};
+  var SPOTS = null, reqId = null, uid = 0;
+  var $ = function(id){ return document.getElementById(id); };
+  function el(tag, attrs, text){ var e = document.createElement(tag); for (var k in (attrs||{})) e.setAttribute(k, attrs[k]); if (text != null) e.textContent = text; return e; }
+  function newId(){ try { return crypto.randomUUID(); } catch(e){ return 'r' + Date.now().toString(36) + Math.random().toString(36).slice(2); } }
+
+  function chipFor(id){
+    var c = el('span', {'class':'chip'});
+    if (!SPOTS || SPOTS[id] == null){ c.className = 'chip unk'; c.textContent = 'Checking spots'; return c; }
+    var n = SPOTS[id];
+    if (n <= 0){ c.className = 'chip full'; c.textContent = 'Full, join the waitlist'; }
+    else c.textContent = n + (n === 1 ? ' spot left' : ' spots left');
+    return c;
+  }
+  function drawWeeks(){
+    var box = $('weekCards'); box.textContent = '';
+    CFG.weeks.forEach(function(w){
+      var d = el('div', {'class':'week'});
+      d.appendChild(el('div', {'class':'n'}, w.name));
+      d.appendChild(el('div', {'class':'d'}, w.dates));
+      d.appendChild(chipFor(w.id));
+      box.appendChild(d);
+    });
+    document.querySelectorAll('.camper').forEach(function(c){
+      c.querySelectorAll('.wk input').forEach(function(i){
+        var t = i.parentNode.querySelector('.tag');
+        t.textContent = SPOTS && SPOTS[i.value] === 0 ? 'Waitlist' : '';
+      });
+    });
+  }
+  function loadSpots(){
+    if (!ENDPOINT) return;
+    fetch(ENDPOINT + '?state=1').then(function(r){ return r.json(); }).then(function(s){
+      if (s && s.spots) { SPOTS = s.spots; drawWeeks(); }
+    }).catch(function(){});
+  }
+
+  function radios(box, name, list){
+    list.forEach(function(v){
+      var l = el('label'); var i = el('input', {type:'radio', name:name, value:v});
+      l.appendChild(i); l.appendChild(document.createTextNode(v)); box.appendChild(l);
+    });
+  }
+  function addCamper(){
+    var n = document.querySelectorAll('.camper').length;
+    if (n >= CFG.maxCampers) return;
+    var node = $('camperTpl').content.firstElementChild.cloneNode(true), id = 'c' + (++uid);
+    var age = node.querySelector('.age'); age.appendChild(el('option', {value:''}, 'Choose'));
+    for (var a = CFG.ages[0]; a <= CFG.ages[1]; a++) age.appendChild(el('option', {value:String(a)}, String(a)));
+    var sh = node.querySelector('.shirt'); sh.appendChild(el('option', {value:''}, 'Choose'));
+    CFG.shirtSizes.forEach(function(s){ sh.appendChild(el('option', {value:s}, s)); });
+    var wk = node.querySelector('.wk');
+    CFG.weeks.forEach(function(w){
+      var l = el('label'); var i = el('input', {type:'checkbox', value:w.id});
+      var s = el('span'); s.appendChild(el('b', null, w.name)); s.appendChild(document.createTextNode(', ' + w.dates + ' '));
+      s.appendChild(el('span', {'class':'tag'}, ''));
+      l.appendChild(i); l.appendChild(s); wk.appendChild(l);
+    });
+    var lu = node.querySelector('.lunch');
+    CFG.lunch.forEach(function(d, di){
+      lu.appendChild(el('div', {'class':'day'}, d.day));
+      var p = el('div', {'class':'pick', role:'radiogroup', 'aria-label': d.day + ' lunch'}); radios(p, id + 'l' + di, d.choices); lu.appendChild(p);
+    });
+    radios(node.querySelector('.golf'), id + 'g', CFG.golfBefore);
+    radios(node.querySelector('.clubs'), id + 'k', ['Yes', 'No']);
+    node.querySelectorAll('label.f').forEach(function(l, i){
+      var f = l.parentNode.querySelector('input,select,textarea'); if (f){ f.id = id + 'f' + i; l.setAttribute('for', f.id); }
+    });
+    node.querySelector('.rm').addEventListener('click', function(){ node.remove(); renumber(); });
+    $('campers').appendChild(node);
+    renumber(); drawWeeks();
+  }
+  function renumber(){
+    var all = document.querySelectorAll('.camper');
+    all.forEach(function(c, i){
+      c.querySelector('.ct').textContent = i === 0 ? 'Camper' : 'Sibling ' + i;
+      c.querySelector('.rm').hidden = all.length === 1;
+    });
+    $('addCamper').hidden = all.length >= CFG.maxCampers;
+  }
+  function val(root, sel){ var e = root.querySelector(sel); return e ? e.value.trim() : ''; }
+  function checked(root, name){ var e = root.querySelector('input[name="' + name + '"]:checked'); return e ? e.value : ''; }
+
+  function gather(){
+    var campers = [];
+    document.querySelectorAll('.camper').forEach(function(c){
+      var g = c.querySelector('.golf input'), k = c.querySelector('.clubs input');
+      var lunch = [];
+      var picks = c.querySelectorAll('.lunch .pick');
+      CFG.lunch.forEach(function(d, di){ var x = picks[di] && picks[di].querySelector('input:checked'); lunch.push(x ? x.value : ''); });
+      campers.push({
+        first: val(c, '.first'), last: val(c, '.last'), age: val(c, '.age'), shirt: val(c, '.shirt'),
+        weeks: Array.prototype.map.call(c.querySelectorAll('.wk input:checked'), function(i){ return i.value; }),
+        lunch: lunch, golf: checked(c, g.name), clubs: checked(c, k.name),
+        allergies: val(c, '.allergies'), medical: val(c, '.medical'), behaviour: val(c, '.behaviour'), other: val(c, '.other')
+      });
+    });
+    return {
+      parent: { name: $('pName').value.trim(), email: $('pEmail').value.trim(), phone: $('pPhone').value.trim(),
+                emergencyName: $('eName').value.trim(), emergencyPhone: $('ePhone').value.trim(), relationship: $('eRel').value.trim() },
+      campers: campers, agree: $('agree').checked, website: $('hp').value
+    };
+  }
+  function digits(p){ return p.replace(/\D/g, '').replace(/^1(?=\d{10}$)/, '').length; }
+  function check(d){
+    var p = d.parent;
+    if (p.name.length < 2) return 'Please enter the parent or guardian name.';
+    if (!/^[^\s@<>"',;]+@[^\s@<>"',;]+\.[A-Za-z]{2,}$/.test(p.email)) return 'Please enter a valid email address.';
+    if (digits(p.phone) < 10) return 'Please enter a phone number with area code.';
+    if (p.emergencyName.length < 2) return 'Please enter a second emergency contact.';
+    if (digits(p.emergencyPhone) < 10) return 'Please enter the emergency contact phone number with area code.';
+    if (p.relationship.length < 2) return 'Please enter how the emergency contact is related to the camper.';
+    for (var i = 0; i < d.campers.length; i++){
+      var c = d.campers[i], n = c.first || ('Camper ' + (i + 1));
+      if (!c.first || !c.last) return n + ': please enter a first and last name.';
+      if (!c.age) return n + ': please pick an age.';
+      if (!c.weeks.length) return n + ': please pick at least one week.';
+      if (!c.shirt) return n + ': please pick a polo size.';
+      for (var j = 0; j < c.lunch.length; j++) if (!c.lunch[j]) return n + ': please pick a ' + CFG.lunch[j].day + ' lunch.';
+      if (!c.golf) return n + ': please say if they have played golf before.';
+      if (!c.clubs) return n + ': please say if they have their own clubs.';
+      if (!c.allergies) return n + ': please list allergies, or write None.';
+      if (!c.medical) return n + ': please list medical conditions, or write None.';
+    }
+    if (!d.agree) return 'Please tick the payment box to finish.';
+    return '';
+  }
+  function showErr(m){ var e = $('err'); e.textContent = m; e.hidden = !m; if (m) e.scrollIntoView({behavior:'smooth', block:'center'}); }
+
+  function post(body, tries){
+    var ctl = typeof AbortController !== 'undefined' ? new AbortController() : null, timer = ctl && setTimeout(function(){ ctl.abort(); }, 30000);
+    return fetch(ENDPOINT, {method:'POST', body:JSON.stringify(body), signal: ctl ? ctl.signal : undefined})
+      .then(function(r){ return r.json(); })
+      .then(function(res){ clearTimeout(timer); if (!res || typeof res.ok !== 'boolean') throw new Error('bad reply'); return res; })
+      .catch(function(err){ clearTimeout(timer); if (tries <= 1) throw err; return new Promise(function(r){ setTimeout(r, 1500); }).then(function(){ return post(body, tries - 1); }); });
+  }
+
+  function done(d, res){
+    var names = {}; CFG.weeks.forEach(function(w){ names[w.id] = w.name + ', ' + w.dates; });
+    var list = $('doneList'); list.textContent = '';
+    var anyC = false, anyW = false;
+    res.results.forEach(function(r){
+      var line = el('div', {'class':'line'});
+      var left = el('div'); left.appendChild(el('b', null, r.camper)); left.appendChild(el('div', {'class':'opt'}, names[r.week] || r.week));
+      var st = r.status === 'Confirmed' ? 'Confirmed' : r.status === 'Waitlist' ? 'Waitlist' + (r.position ? ', number ' + r.position : '') : r.status;
+      if (r.already) st += ' (already signed up)';
+      if (r.status === 'Confirmed') anyC = true; if (r.status === 'Waitlist') anyW = true;
+      line.appendChild(left); line.appendChild(el('div', {'class':'st ' + (r.status === 'Confirmed' ? 'c' : 'w')}, st));
+      list.appendChild(line);
+    });
+    $('doneTitle').textContent = anyC ? (anyW ? 'You are signed up, with a waitlist week' : 'You are signed up') : 'You are on the waitlist';
+    $('donePay').textContent = (anyC ? 'Our team will reach out to collect payment by Visa or e-transfer. Payment is due by February 15, 2027. ' : '') +
+      (anyW ? 'A waitlist week is not a spot yet. If one opens, our team will reach out in the order families signed up.' : '');
+    $('doneEmail').textContent = d.parent.email;
+    $('form').hidden = true; $('done').hidden = false;
+    window.scrollTo({top: $('done').offsetTop - 20, behavior:'smooth'});
+    loadSpots();
+  }
+
+  $('form').addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var d = gather(), m = check(d);
+    if (m) return showErr(m);
+    showErr('');
+    if (!ENDPOINT){ return showErr('Preview only: this copy of the page is not connected to the sign-up sheet.'); }
+    var btn = $('go'); btn.disabled = true; btn.textContent = 'Saving';
+    d.requestId = reqId || (reqId = newId());
+    post(d, 3).then(function(res){
+      btn.disabled = false; btn.textContent = 'Sign up';
+      if (res.ok) { reqId = null; done(d, res); } else showErr(res.message || 'That did not save. Please try again.');
+    }, function(){
+      btn.disabled = false; btn.textContent = 'Sign up';
+      showErr('We could not reach the sign-up sheet. Please check your connection and try again, or call our team at 905-640-3633.');
+    });
+  });
+  ['input','change'].forEach(function(t){ $('form').addEventListener(t, function(){ reqId = null; }); });
+  $('addCamper').addEventListener('click', addCamper);
+  $('again').addEventListener('click', function(){
+    $('form').reset(); $('campers').textContent = ''; addCamper();
+    $('done').hidden = true; $('form').hidden = false; window.scrollTo({top:0});
+  });
+
+  addCamper(); drawWeeks(); loadSpots();
+})();
+</script>
+</body>
+</html>
